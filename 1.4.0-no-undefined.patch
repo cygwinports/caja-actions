@@ -1,0 +1,10 @@
+--- origsrc/caja-actions/src/core/Makefile.am	2012-12-15 21:49:47.000000000 -0600
++++ src/caja-actions/src/core/Makefile.am	2012-12-15 21:59:28.033889700 -0600
+@@ -99,6 +99,7 @@ libna_core_la_SOURCES = \
+ 	$(NULL)
+ 
+ libna_core_la_LIBADD = \
++	$(CAJA_ACTIONS_LIBS)							\
+ 	$(NULL)
+ 
+ libna_core_la_LDFLAGS = \
