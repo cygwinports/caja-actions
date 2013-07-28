@@ -1,9 +1,9 @@
 GIT_URI="git://github.com/NiceandGently/caja-actions.git"
-GIT_REV=eb68e14
+GIT_REV=93dede8
 inherit mate git
 
 NAME="mate-file-manager-actions"
-VERSION=1.4.0
+VERSION=1.6.0
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="Caja Actions extension"
@@ -12,8 +12,7 @@ the user to add arbitrary program to be launched through the Caja file manager
 popup menu of selected files."
 HOMEPAGE="https://github.com/NiceandGently/caja-actions"
 
-PATCH_URI="1.4.0-no-undefined.patch"
-
+CYGCONF_ARGS="--with-gtk=2"
 MAKEOPTS+=" pkgdocdir=\$(docdir)"
 
 KEEP_LA_FILES="none"
