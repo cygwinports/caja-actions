@@ -1,0 +1,11 @@
+--- origsrc/caja-actions/src/core/na-icontext.c	2013-07-28 03:36:56.000000000 -0500
++++ src/caja-actions/src/core/na-icontext.c	2013-07-28 03:45:45.575596200 -0500
+@@ -55,6 +55,8 @@
+ #include "na-selected-info.h"
+ #include "na-settings.h"
+ 
++#undef stdout
++
+ /* private interface data
+  */
+ struct _NAIContextInterfacePrivate {

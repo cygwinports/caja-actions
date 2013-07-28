@@ -12,6 +12,8 @@ the user to add arbitrary program to be launched through the Caja file manager
 popup menu of selected files."
 HOMEPAGE="https://github.com/NiceandGently/caja-actions"
 
+PATCH_URI="1.6.0-stdout.patch"
+
 CYGCONF_ARGS="--with-gtk=2"
 MAKEOPTS+=" pkgdocdir=\$(docdir)"
 
