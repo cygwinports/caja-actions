@@ -1,9 +1,9 @@
 GIT_URI="git://github.com/NiceandGently/caja-actions.git"
-GIT_REV=93dede8
+GIT_TAG=v${PV}
 inherit mate git
 
-NAME="mate-file-manager-actions"
-VERSION=1.6.0
+NAME="caja-actions"
+VERSION=1.6.2
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="Caja Actions extension"
@@ -13,6 +13,8 @@ popup menu of selected files."
 HOMEPAGE="https://github.com/NiceandGently/caja-actions"
 
 PATCH_URI="1.6.0-stdout.patch"
+
+OBSOLETES="mate-file-manager-actions"
 
 CYGCONF_ARGS="--with-gtk=2"
 MAKEOPTS+=" pkgdocdir=\$(docdir)"
